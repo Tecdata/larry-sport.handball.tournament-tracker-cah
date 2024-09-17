@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio en Mantenimiento</title>
+
+    <!-- Fluent UI CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fluentui/web-components@latest/dist/fluent.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fluentui/web-components@2.0.0/dist/web-components.js"></script>
+
+    <!-- Fluent UI Icons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/@fluentui/web-components@2.0.0/dist/fluent-icons.js"
+    ></script>
+
+    <!-- Fabric Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3f2f1;
+      }
+      .maintenance-container {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 800px;
+      }
+      h1 {
+        color: #323130;
+        margin-top: 16px;
+      }
+      fluent-icon {
+        font-size: 48px;
+        color: #0078d4;
+        display: inline-block;
+        animation: rotate 3s ease-in-out infinite;
+      }
+      .fabric-icon {
+        font-size: 48px;
+        color: #0078d4;
+        margin-top: 20px;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maintenance-container">
+      <img src="./logo-larrysport.png" height="80" />
+
+      <h1>Sitio en Mantenimiento</h1>
+      <p>Estamos trabajando para mejorar su experiencia.</p>
+      <p>Por favor, volvé más tarde.</p>
+
+      <i class="ms-Icon ms-Icon--DeveloperTools fabric-icon" aria-hidden="true"></i>
+    </div>
+  </body>
+</html>
